@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import WhatsAppButton from "./components/WhatsAppButton";
-import { useEffect } from "react";
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const geistSans = Geist({
@@ -32,17 +30,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  useEffect(() => {
-    // Load non-critical styles asynchronously to avoid render-blocking CSS
-    // These imports create async CSS chunks and are executed on the client only.
-    const load = async () => {
-      // @ts-ignore - CSS-only package import
-      await import("tw-animate-css");
-      // @ts-ignore - CSS-only package import
-      await import("shadcn/tailwind.css");
-    };
-    void load();
-  }, []);
   return (
     <html
       lang="en"
