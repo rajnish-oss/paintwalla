@@ -6,6 +6,14 @@ const resendApiKey = process.env.RESEND_API_KEY;
 
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
+const escapeHtml = (value: string) =>
+  value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
 type EnquiryPayload = {
   name?: string;
   phone?: string;
@@ -41,7 +49,13 @@ export async function POST(request: Request) {
     from: "Paintwalla <onboarding@resend.dev>",
     to: ["Paintwala123@gmail.com"],
     subject: `New enquiry from ${name}`,
-    react: EmailTemplate({ name, phone, pincode, workArea, message }),
+    html: EmailTemplate({
+      name: escapeHtml(name),
+      phone: escapeHtml(phone),
+      pincode: escapeHtml(pincode),
+      workArea: escapeHtml(workArea),
+      message: escapeHtml(message).replace(/\n/g, "<br />"),
+    }),
   });
 
   if (error) {
