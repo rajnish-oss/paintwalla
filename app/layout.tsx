@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "paintwalla",
-  description: "Explore paintwalla's interior paint, exterior paint, wood polish, texture, waterproofing, and POP services.",
+  title: "Paintwalla — Premium Home Painting Services | Interior & Exterior Painters",
+  description: "Explore Paintwalla's interior paint, exterior paint, wood polish, texture, waterproofing, and POP services.",
   icons: {
     icon: [
       { url: "/i16.png", sizes: "16x16", type: "image/png" },

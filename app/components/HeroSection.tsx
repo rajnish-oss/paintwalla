@@ -18,7 +18,11 @@ const cormorant = Cormorant({
 
 const navItems = ["How It Works", "Our Work", "Services", "Calculator"];
 
-const HeroSection: React.FC = () => {
+type HeroSectionProps = {
+  renderH1?: boolean;
+};
+
+const HeroSection: React.FC<HeroSectionProps> = ({ renderH1 = true }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
 
@@ -135,12 +139,18 @@ const HeroSection: React.FC = () => {
         <main className="mx-auto flex w-full max-w-6xl flex-1 items-center px-4 pb-12 pt-8 sm:px-6 lg:px-8 lg:pb-16 ">
           <div className="flex flex-col w-full gap-2 lg:items-center justify-center">
 
-              <h1 className={`${cormorant.className} max-w-5xl flex text-center text-6xl leading-[1.05] tracking-tighter text-white drop-shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:text-6xl lg:text-8xl`  } >
-                Fall in Love With Your Home All Over Again
-              </h1>
+              {renderH1 ? (
+                <h1 className={`${cormorant.className} max-w-5xl flex text-center text-4xl leading-[1.05] tracking-tighter text-white drop-shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:text-6xl lg:text-7xl`}>
+                  Premium Home Painting Services — Interior & Exterior Painters
+                </h1>
+              ) : (
+                <p className={`${cormorant.className} max-w-5xl flex text-center text-4xl leading-[1.05] tracking-tighter text-white drop-shadow-[0_10px_24px_rgba(0,0,0,0.35)] sm:text-6xl lg:text-7xl`}>
+                  Premium Home Painting Services — Interior & Exterior Painters
+                </p>
+              )}
 
               <p className={`${spaceMono.className} mt-6 max-w-2xl flex text-center text-base leading-8 text-white/86 sm:text-lg`}>
-                Top-quality materials aur expert painters ki guarantee.<br/> We bring your vision to life with zero compromise on quality
+                Premium home painting for interior and exterior spaces — experienced painters, top-quality materials, and meticulous preparation to deliver long-lasting, beautiful finishes.
               </p>
 
               <div className={`${spaceMono.className} mt-8 flex flex-col gap-4 sm:flex-row sm:items-center`}>

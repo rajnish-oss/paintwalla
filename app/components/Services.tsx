@@ -49,9 +49,9 @@ const Services: React.FC = () => {
 					<p className="text-sm font-semibold uppercase tracking-[0.42em] text-slate-500">
 						paintwalla Services
 					</p>
-					<h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+					<h2 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
 						Book <span className="text-slate-700">Our Service</span>
-					</h1>
+					</h2>
 					<p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
 						A clean, open layout inspired by the reference image, with enough breathing room for your own background image to shine through.
 					</p>
@@ -73,9 +73,9 @@ const Services: React.FC = () => {
 										<span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-900/10 bg-white/70 text-sm font-semibold text-slate-800 shadow-sm">
 											0{index + 1}
 										</span>
-										<h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+										<h3 className="text-2xl font-semibold tracking-tight text-slate-950">
 											{service.title}
-										</h2>
+										</h3>
 									</div>
 
 									<div className="flex items-center justify-between pt-2">
@@ -99,9 +99,9 @@ const Services: React.FC = () => {
 										<span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-900/10 bg-white/70 text-sm font-semibold text-slate-800 shadow-sm">
 											0{index + 1}
 										</span>
-										<h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+										<h3 className="text-2xl font-semibold tracking-tight text-slate-950">
 											{service.title}
-										</h2>
+										</h3>
 									</div>
 
 									<div className="flex items-center justify-between pt-2">
@@ -125,9 +125,9 @@ const Services: React.FC = () => {
 										<span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-900/10 bg-white/70 text-sm font-semibold text-slate-800 shadow-sm">
 											0{index + 1}
 										</span>
-										<h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+										<h3 className="text-2xl font-semibold tracking-tight text-slate-950">
 											{service.title}
-										</h2>
+										</h3>
 									</div>
 
 									<div className="flex items-center justify-between pt-2">
@@ -151,9 +151,9 @@ const Services: React.FC = () => {
 										<span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-900/10 bg-white/70 text-sm font-semibold text-slate-800 shadow-sm">
 											0{index + 1}
 										</span>
-										<h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+										<h3 className="text-2xl font-semibold tracking-tight text-slate-950">
 											{service.title}
-										</h2>
+										</h3>
 									</div>
 
 									<div className="flex items-center justify-between pt-2">
@@ -177,9 +177,9 @@ const Services: React.FC = () => {
 										<span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-900/10 bg-white/70 text-sm font-semibold text-slate-800 shadow-sm">
 											0{index + 1}
 										</span>
-										<h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+										<h3 className="text-2xl font-semibold tracking-tight text-slate-950">
 											{service.title}
-										</h2>
+										</h3>
 									</div>
 
 									<div className="flex items-center justify-between pt-2">
@@ -203,9 +203,9 @@ const Services: React.FC = () => {
 										<span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-900/10 bg-white/70 text-sm font-semibold text-slate-800 shadow-sm">
 											0{index + 1}
 										</span>
-										<h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+										<h3 className="text-2xl font-semibold tracking-tight text-slate-950">
 											{service.title}
-										</h2>
+										</h3>
 									</div>
 
 									<div className="flex items-center justify-between pt-2">
@@ -228,9 +228,9 @@ const Services: React.FC = () => {
 									<span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-900/10 bg-white/70 text-sm font-semibold text-slate-800 shadow-sm">
 										0{index + 1}
 									</span>
-									<h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+									<h3 className="text-2xl font-semibold tracking-tight text-slate-950">
 										{service.title}
-									</h2>
+									</h3>
 								</div>
 
 						
