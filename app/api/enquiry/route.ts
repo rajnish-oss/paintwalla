@@ -5,15 +5,6 @@ import { EmailTemplate } from "../../components/email-template";
 const resendApiKey = process.env.RESEND_API_KEY;
 
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
-
-const escapeHtml = (value: string) =>
-  value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/\"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-
 type EnquiryPayload = {
   name?: string;
   phone?: string;
@@ -46,19 +37,20 @@ export async function POST(request: Request) {
   }
 
   const { data, error } = await resend.emails.send({
-    from: "Paintwalla <onboarding@resend.dev>",
+    from: "Paintwalla <no-reply@paintwalla.store>",
     to: ["Paintwala123@gmail.com"],
     subject: `New enquiry from ${name}`,
-    html: EmailTemplate({
-      name: escapeHtml(name),
-      phone: escapeHtml(phone),
-      pincode: escapeHtml(pincode),
-      workArea: escapeHtml(workArea),
-      message: escapeHtml(message).replace(/\n/g, "<br />"),
+    react : EmailTemplate({
+      name: name,
+      phone: phone,
+      pincode: pincode,
+      workArea: workArea,
+      message: message,
     }),
   });
 
   if (error) {
+    console.log(error)
     return NextResponse.json({ error }, { status: 400 });
   }
 
