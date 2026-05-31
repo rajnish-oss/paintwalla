@@ -1,0 +1,13 @@
+# robots.txt for Paintwalla
+# Allow all crawlers but block access to API and admin/private paths.
+
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow everything else
+Allow: /
+
+# Point crawlers to the sitemap
+Sitemap: /sitemap.xml
