@@ -21,15 +21,15 @@ interface PricingRates {
 }
 
 const TIER_PRICING: Record<PaintTier, { material: number; labour: number }> = {
-  [PaintTier.Economy]: { material: 5, labour: 8 },
-  [PaintTier.Premium]: { material: 7, labour: 10 },
-  [PaintTier.Luxury]: { material: 15, labour: 12 },
+  [PaintTier.Economy]: { material: 5, labour: 7 },
+  [PaintTier.Premium]: { material: 7, labour: 9 },
+  [PaintTier.Luxury]: { material: 15, labour: 11 },
 };
 
 const TIER_LABOUR_FRESH: Record<PaintTier, number> = {
-  [PaintTier.Economy]: 6,
-  [PaintTier.Premium]: 8,
-  [PaintTier.Luxury]: 10,
+  [PaintTier.Economy]: 8,
+  [PaintTier.Premium]: 10,
+  [PaintTier.Luxury]: 12,
 };
 
 const PREP_PRICING = {

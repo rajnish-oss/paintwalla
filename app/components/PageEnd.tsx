@@ -16,8 +16,8 @@ export default function PageEnd() {
 						<Link href="/services" className="hover:underline">
 							Services
 						</Link>
-						<Link href="/work" className="hover:underline">
-							Work
+						<Link href="/gallery" className="hover:underline">
+							Gallery
 						</Link>
 						<Link href="/contact" className="hover:underline">
 							Contact

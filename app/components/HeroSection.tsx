@@ -165,12 +165,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ renderH1 = true }) => {
                   Book a quotation
                 </a>
 
-                <a
-                  href="#"
+                <Link
+                  href="/gallery"
                   className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/8 px-8 py-4 text-sm font-semibold tracking-[0.18em] text-white/92 uppercase backdrop-blur-md transition hover:bg-white/14"
                 >
                   See Examples
-                </a>
+                </Link>
               </div>
           </div>
         </main>

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import { Card, CardContent } from "../../components/ui/card";
 import {
@@ -134,6 +135,15 @@ function Work() {
 							</div>
 						);
 					})}
+				</div>
+
+				<div className="mt-12 flex justify-center lg:mt-16">
+					<Link
+						href="/gallery"
+						className="inline-flex items-center justify-center rounded-full bg-[#d8b56c] px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-[0_14px_30px_rgba(15,23,42,0.16)] transition hover:-translate-y-0.5 hover:bg-[#e1bf75] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d8b56c]"
+					>
+						View Gallery
+					</Link>
 				</div>
 			</div>
 		</section>
