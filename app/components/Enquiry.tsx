@@ -87,7 +87,7 @@ export default function Enquiry({ embedded = false }: EnquiryProps) {
             value={name}
             onChange={(e) => setName(e.target.value)}
             aria-label="Name"
-            className="mt-1 block w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#d8b56c] transition-colors"
+            className="mt-1 block w-full rounded-xl border text-black border-slate-200 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#d8b56c] transition-colors"
             required
           />
         </label>
@@ -99,7 +99,7 @@ export default function Enquiry({ embedded = false }: EnquiryProps) {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             aria-label="Phone number"
-            className="mt-1 block w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#d8b56c] transition-colors"
+            className="mt-1 block w-full rounded-xl border text-black border-slate-200 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#d8b56c] transition-colors"
             required
           />
         </label>
@@ -116,7 +116,7 @@ export default function Enquiry({ embedded = false }: EnquiryProps) {
               setPincodeError("");
             }}
             aria-label="Pincode"
-            className="mt-1 block w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#d8b56c] transition-colors"
+            className="mt-1 block w-full rounded-xl border text-black border-slate-200 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#d8b56c] transition-colors"
             required
           />
           {pincodeError && <p className="mt-1 text-sm text-rose-600">{pincodeError}</p>}
@@ -131,7 +131,7 @@ export default function Enquiry({ embedded = false }: EnquiryProps) {
             value={workArea}
             onChange={(e) => setWorkArea(e.target.value)}
             aria-label="Work area in sq m"
-            className="mt-1 block w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#d8b56c] transition-colors"
+            className="mt-1 block w-full rounded-xl border text-black border-slate-200 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#d8b56c] transition-colors"
             required
           />
         </label>
@@ -143,7 +143,7 @@ export default function Enquiry({ embedded = false }: EnquiryProps) {
             onChange={(e) => setMessage(e.target.value)}
             aria-label="Message"
             rows={5}
-            className="mt-1 block w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#d8b56c] transition-colors"
+            className="mt-1 block w-full rounded-xl border text-black border-slate-200 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#d8b56c] transition-colors"
             required
           />
         </label>
